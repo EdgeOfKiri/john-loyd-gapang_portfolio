@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Loyd Gapang — Web Developer Portfolio</title>
+    <meta name="description" content="John Loyd Gapang, BSIT graduate and web developer building database-driven PHP and MySQL applications. Capstone and government internship project work.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230F2A2E'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='30' fill='%233FBF8F' text-anchor='middle'%3EJG%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="#home" class="brand">John Loyd Gapang</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="siteNav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="John_Loyd_Gapang_Developer_Resume.pdf" class="cv-btn" download>Download CV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="home-inner">
+            <p class="role">Web Developer</p>
+            <h1>I build practical, database-driven web applications with PHP and MySQL.</h1>
+            <p class="sub">BSIT graduate working in PHP and MySQL — from schema design through the interface people click on every day.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="cta-btn">See the work</a>
+                <a href="#contact" class="cta-link">Get in touch →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <div class="about-layout">
+            <img src="images/profile-photo.jpg" alt="John Loyd Gapang" class="profile-photo">
+            <div>
+                <p>
+                    I'm a BSIT graduate from Nueva Ecija University of Science and Technology (Gabaldon
+                    Campus). Most of what I know about building software, I learned by shipping two real
+                    systems for local government use in native PHP: a Municipal Social Welfare and
+                    Development management platform, and a Municipal Budget Management System built
+                    during my internship.
+                </p>
+                <p>
+                    Both were team projects — four people each — and both had to hold up under real,
+                    messy data: beneficiary records, budget line items, reporting requirements that
+                    didn't wait for the software to be finished. I worked across the stack: database
+                    schema, backend logic in PHP, and — on the capstone — the frontend as well.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skills-group">
+                <h3>Core</h3>
+                <div class="tags">
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Bootstrap</span>
+                </div>
+            </div>
+            <div class="skills-group">
+                <h3>Tools</h3>
+                <div class="tags">
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>XAMPP</span>
+                    <span>phpMyAdmin</span>
+                    <span>VS Code</span>
+                </div>
+            </div>
+            <div class="skills-group">
+                <h3>Also applied</h3>
+                <div class="tags">
+                    <span>Chart.js</span>
+                    <span>REST API fundamentals</span>
+                </div>
+            </div>
+            <div class="skills-group">
+                <h3>Exposure</h3>
+                <div class="tags">
+                    <span>Angular</span>
+                    <span>Ionic</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <article class="project">
+            <div class="project-media-gallery">
+                <img src="images/mswdo-login.png" alt="MSWDO system login page">
+                <img src="images/mswdo-dashboard.png" alt="MSWDO admin dashboard showing beneficiary statistics">
+                <img src="images/mswdo-senior-table.png" alt="MSWDO senior citizen records table">
+            </div>
+            <div class="project-body">
+                <p class="project-meta">Academic Capstone · Team of 4 · Full-Stack Developer</p>
+                <h3>Municipal Social Welfare &amp; Development Management System</h3>
+                <p>
+                    A records and reporting platform built for the Municipal Social Welfare and
+                    Development Office, replacing scattered beneficiary files with one shared
+                    database. I worked across the stack — frontend interfaces and backend logic in
+                    native PHP — and designed the MySQL schema behind beneficiary management,
+                    application processing, records tracking, and monitoring.
+                </p>
+                <ul>
+                    <li>Centralized fragmented beneficiary records into a single, cross-referenced database</li>
+                    <li>Built reporting views with Chart.js so office staff could read program trends at a glance</li>
+                    <li>Handled testing and debugging across both frontend and backend before evaluation</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/EdgeOfKiri/mswdo-management-system" target="_blank" rel="noopener">View on GitHub ↗</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <div class="project-media-gallery">
+                <img src="images/budget-login.png" alt="Municipal Budget Office login page">
+                <img src="images/budget-admin-dashboard.png" alt="Budget system admin overview">
+                <img src="images/budget-ors-portal.png" alt="ORS Portal request dashboard">
+            </div>
+            <div class="project-body">
+                <p class="project-meta">LGU Internship · Team of 4 · Backend Developer</p>
+                <h3>Municipal Budget Management System</h3>
+                <p>
+                    Built during my internship with the Local Government Unit of Gabaldon, this
+                    system supports internal budget tracking and reporting. I owned the backend:
+                    database-driven functionality in PHP and MySQL, plus testing and debugging of
+                    backend features ahead of handoff, working inside a live government office's
+                    existing requirements.
+                </p>
+                <ul>
+                    <li>Built backend workflows for budget tracking and reporting</li>
+                    <li>Found and fixed functional issues through structured backend testing</li>
+                    <li>Delivered within an active office environment, not just a classroom setting</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/EdgeOfKiri/budget-management-system" target="_blank" rel="noopener">View on GitHub ↗</a>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="education">
+        <h2>Education &amp; Recognition</h2>
+        <div class="edu-row">
+            <div>
+                <h3>Bachelor of Science in Information Technology</h3>
+                <p class="project-meta">Nueva Ecija University of Science and Technology – Gabaldon Campus · Graduated 2026</p>
+            </div>
+        </div>
+        <ul class="recognition-list">
+            <li>Certificate of Recognition — Excellence in System Development</li>
+            <li>Dean's Lister — four consecutive semesters (3rd &amp; 4th year)</li>
+            <li>Pre-Employment Orientation Seminar (PEOS) Certificate</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Open to web development, technical support, and administrative roles — feel free to reach out.</p>
+        <ul class="contact-list">
+            <li><strong>Location</strong> Gabaldon, Nueva Ecija, Philippines</li>
+            <li><strong>Phone</strong> 0936 663 7326</li>
+            <li><strong>Email</strong> <a href="mailto:jlgapang@gmail.com">jlgapang@gmail.com</a></li>
+            <li><strong>LinkedIn</strong> <a href="https://www.linkedin.com/in/john-loyd-gapang-bb85803b9/" target="_blank" rel="noopener">linkedin.com/in/john-loyd-gapang-bb85803b9</a></li>
+            <li><strong>GitHub</strong> <a href="https://github.com/EdgeOfKiri" target="_blank" rel="noopener">github.com/EdgeOfKiri</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2026 John Loyd Gapang.</p>
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const siteNav = document.getElementById('siteNav');
+        navToggle.addEventListener('click', () => {
+            const isOpen = siteNav.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', isOpen);
+        });
+        siteNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                siteNav.classList.remove('open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+</html>
